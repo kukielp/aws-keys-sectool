@@ -4,9 +4,9 @@ import sys
 
 from botocore.exceptions import ClientError
 
-KEY_ID = 'aws_access_key_id'
-SECRET_KEY = 'aws_secret_access_key'
-SESSION_TOKEN = 'aws_session_token'
+KEY_ID = os.getenv('aws_access_key_id')
+SECRET_KEY = os.getenv('aws_secret_access_key')
+SESSION_TOKEN = os.getenv('aws_session_token')
 
 def get_accessibility_data(print_output):
     """
